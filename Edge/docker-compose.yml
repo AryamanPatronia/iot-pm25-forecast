@@ -1,0 +1,6 @@
+version: '3'
+services:
+  data_preprocessing_operator:
+    build: .
+    image: data_preprocessing_operator:latest
+

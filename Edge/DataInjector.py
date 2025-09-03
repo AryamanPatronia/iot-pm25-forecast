@@ -1,0 +1,13 @@
+import requests
+
+if __name__ == '__main__':
+
+    #Using this url, we will fetch the data from Newcastle Urban Observatory...
+    url = "https://newcastle.urbanobservatory.ac.uk/api/v1.1/sensors/PER_AIRMON_MONITOR1135100/data/json/?starttime=20230601&endtime=20230831"
+
+    # Request data from Urban Observatory Platform...
+    resp = requests.get(url)
+
+    # Converting the JSON response to a dictionary format...
+    raw_data_dict = resp.json()
+    print(raw_data_dict) # Printing the data...
